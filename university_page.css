@@ -1,0 +1,326 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="text"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0069d9;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Variants */
+/* Student */
+.student .container {
+    background-color: #f2f2f2;
+}
+
+/* Admin */
+.admin .container {
+    background-color: #f2f2f2;
+}
+
+/* Super Admin */
+.super-admin .container {
+    background-color: #f2f2f2;
+}
+
+/* Styles for the modal window */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Open Modals buttons*/
+.create-rso-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.create-rso-button:hover {
+    background-color: #0069d9;
+}
+
+.create-event-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.create-event-button:hover {
+    background-color: #0069d9;
+}
+
+/* php stuff */
+.university-table {
+    border-collapse: collapse;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 25px #888;
+}
+
+.university-table td,
+.university-table th {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.university-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.university-table tr:hover {
+    background-color: #ddd;
+}
+
+.university-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: darkgoldenrod;
+    color: #fff;
+}
+
+.details-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #009879;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.details-button:hover {
+    background-color: #007f6e;
+}
+
+/* Comments */
+.comment {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comment p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.comment p:first-child {
+    font-weight: bold;
+}
+
+.comment p:last-child {
+    margin-bottom: 0;
+}
+
+/* modal window */
+.modal {
+    display: none;
+    /* Hide modal by default */
+    position: fixed;
+    /* Position the modal */
+    z-index: 1;
+    /* Set the z-index to make the modal appear on top of other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Make the modal cover the entire screen */
+    height: 100%;
+    overflow: auto;
+    /* Enable scrolling when necessary */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Add a black semi-transparent background behind the modal */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    /* Set a white background for the modal content */
+    margin: 15% auto;
+    /* Center the modal on the page */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Set the width of the modal content */
+    max-width: 800px;
+    /* Set a maximum width for the modal content */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.event-name {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.event-details p {
+    margin: 0.5em 0;
+}
+
+.comments label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.comments textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1em;
+}
+
+.comments select {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.comments button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.comments button:hover {
+    background-color: #3e8e41;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.comment p {
+    margin: 0.5em 0;
+}
+
+.comment .user-id {
+    font-weight: bold;
+}
+
+.comment .content {
+    font-style: italic;
+}
+
+.comment .rating {
+    font-weight: bold;
+}

@@ -1,0 +1,197 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="text"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Variants */
+/* Student */
+.student .container {
+    background-color: #f2f2f2;
+}
+
+/* Admin */
+.admin .container {
+    background-color: #f2f2f2;
+}
+
+/* Super Admin */
+.super-admin .container {
+    background-color: #f2f2f2;
+}
+
+/* Styles for the modal window */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Styles for the button that triggers the modal */
+#openModalBtn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Styles to show the modal when the button is clicked */
+#openModalBtn:focus+.modal {
+    display: block;
+}
+
+#createUniversityModal {
+    display: none;
+}
+
+#createUniversityBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#createUniversityBtn:hover {
+    background-color: #0069d9;
+}
+
+
+/* Classes for PHP generated content */
+.university-table {
+    border-collapse: collapse;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 25px #888;
+}
+
+.university-table td,
+.university-table th {
+    border: 2px solid black;
+    padding: 8px;
+}
+
+.university-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.university-table tr:hover {
+    background-color: #ddd;
+}
+
+.university-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkgoldenrod;
+    color: #fff;
+}
+
+.join-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.join-button:hover {
+    background-color: #0069d9;
+}
