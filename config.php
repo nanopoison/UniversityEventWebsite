@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
 $user = 'root';
-$pass = 'LionsBomb2021!';
-$dbname = 'universityeventdatabase';
+//$pass = ''; // HID THIS PASSWORD SO I DONT HAVE IT PUBLIC
+//$dbname = 'universityeventdatabase';
 
 $link = mysqli_connect($host, $user, $pass, $dbname);
 
